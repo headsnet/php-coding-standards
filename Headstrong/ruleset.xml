@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<ruleset name="Headstrong">
+	<description>The Headstrong PHP coding standard, based on the Symfony2 coding standard.</description>
+
+	<!-- There should not be any code in the bundle Resources directory. -->
+	<exclude-pattern>*/Resources/*</exclude-pattern>
+
+	<!-- Set tab width to 4 spaces -->
+	<arg name="tab-width" value="4"/>
+
+	<!-- Base rules on Symfony2 -->
+	<rule ref="Symfony2">
+
+		<!-- Exclude control structure formatting (braces) -->
+		<exclude name="Squiz.ControlStructures.ControlSignature"/>
+
+		<!-- Exclude banning of inline control structures -->
+		<exclude name="Generic.ControlStructures.InlineControlStructure"/>
+
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+
+		<exclude name="Squiz.PHP.CommentedOutCode.Found"/>
+		<exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/>
+
+		<exclude name="Symfony2.Arrays.MultiLineArrayComma"/>
+		<exclude name="PSR2.Classes.ClassDeclaration"/>
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnNewLine"/>
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
+		<exclude name="Squiz.Strings.ConcatenationSpacing.PaddingFound"/>
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+
+   		<!-- This is just for Codeception helper classes that currently don't have namespaces  -->
+    	<exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+
+	</rule>
+
+	<!-- Tell whitespace ScopeIndent to use tabs of width 4 spaces -->
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+		<properties>
+			<property name="indent" value="4"/>
+			<property name="tabIndent" value="true"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.Files.EndFileNewline" />
+
+	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
+    	<properties>
+    	    <property name="spacing" value="1"/>
+    	</properties>
+	</rule>
+
+	<!-- Implement our own control structure formatting -->
+	<rule ref="Headstrong.ControlStructures.ControlSignature"/>
+
+	<!-- Change severity of some PHPDoc errors down to warnings -->
+	<rule ref="Symfony2.Commenting.FunctionComment.MissingReturn">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.SpacingAfterParams">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.SpacingBeforeParams">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.ParamNameNoMatch">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.MissingParamTag">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.ParameterNamesNotAligned">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.SpacingBeforeParamType">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.ParameterCommentsNotAligned">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.SpacingAfterParams">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Commenting.ClassComment.SpacingBeforeTags">
+		<type>warning</type>
+	</rule>
+	<rule ref="Symfony2.Functions.ScopeOrder.Invalid">
+    <type>warning</type>
+  </rule>
+
+</ruleset>
