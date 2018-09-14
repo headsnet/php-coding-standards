@@ -17,4 +17,9 @@
         </properties>
     </rule>
     <rule ref="HeadstrongPSR2.ControlStructures.ControlSignature"/>
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+        </properties>
+    </rule>
 </ruleset>
