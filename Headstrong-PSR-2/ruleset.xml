@@ -8,7 +8,7 @@
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
     </rule>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
-    <rule ref="HeadstrongPSR2.ControlStructures.ControlSignature"/>
+    <rule ref="Headstrong-PSR-2.ControlStructures.ControlSignature"/>
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
