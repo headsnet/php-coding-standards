@@ -2,15 +2,14 @@
 
 namespace HeadstrongPSR2\Sniffs\ControlStructures;
 
-use PHP_CodeSniffer\Sniffs\Sniff;
-use PHP_CodeSniffer\Files\File;
+use PHP_CodeSniffer\Sniffs\AbstractPatternSniff;
 
 /**
  * Verifies that control statements conform to their coding standards.
  *
  * @author Ben Roberts <ben@headsnet.com>
  */
-class ControlSignatureSniff implements Sniff
+class ControlSignatureSniff extends AbstractPatternSniff
 {
 	/**
 	 * A list of tokenizers this sniff supports.
