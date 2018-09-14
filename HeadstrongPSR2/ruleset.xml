@@ -3,12 +3,12 @@
     <description>PSR2 with various modifications</description>
     <arg name="tab-width" value="4"/>
     <rule ref="PSR2">
+        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
         <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
     </rule>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
-    <rule ref="HeadstrongPSR2.ControlStructures.ControlSignature"/>
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
@@ -16,4 +16,5 @@
             <property name="tabIndent" value="true"/>
         </properties>
     </rule>
+    <rule ref="HeadstrongPSR2.ControlStructures.ControlSignature"/>
 </ruleset>
