@@ -5,7 +5,7 @@
     <rule ref="PSR2">
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
         <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
-		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOneNewLine" />
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnNewLine" />
         <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.NewlineBeforeOpenBrace"/>
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
         <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
